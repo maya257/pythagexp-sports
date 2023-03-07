@@ -1,2 +1,10 @@
-# ignore all .csv files
+# ignore all .csv files in all directories
 *.csv
+# ignore all files in the gl2018 directory
+data/gl2018/*.csv
+data/gl2019/*.csv
+data/gl2020/*.csv
+data/gl2021/*.csv
+data/gl2022/*.csv
+
+

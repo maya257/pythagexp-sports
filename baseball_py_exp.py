@@ -4,16 +4,19 @@ import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
+GL = 'gl2018'
 #convert txt to csv
-with open('./data/gl2018/gl2018.txt') as f:
-    with open('./data/gl2018/gl2018.csv', 'w') as f1:
+txt_path = './data/' + GL+ '/' + GL + '.txt'
+csv_path = './data/' + GL+ '/' + GL + '.csv'
+
+with open(txt_path) as f:
+    with open(csv_path, 'w') as f1:
         for line in f:
             f1.write(line)
 
 
 
-MLB = pd.read_csv('./data/gl2018/gl2018.csv')
+MLB = pd.read_csv(csv_path)
 print(MLB.shape)
 # add column headers to the dataframe
 columns = ['Date','DoubleHeader','Day','VisitingTeam','VisitingLeague','VisitingGameNumber','HomeTeam','HomeLeague',
