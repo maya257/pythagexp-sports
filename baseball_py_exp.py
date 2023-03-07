@@ -4,7 +4,7 @@ import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-GL = 'gl2018'
+GL = 'gl202'
 #convert txt to csv
 txt_path = './data/' + GL+ '/' + GL + '.txt'
 csv_path = './data/' + GL+ '/' + GL + '.csv'
